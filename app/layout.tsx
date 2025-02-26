@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const ubuntu = Ubuntu({
-  weight: "400",
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${ubuntu.className} `}>{children}</body>
+      <body className={`${poppins.className} `}>{children}</body>
     </html>
   );
 }
