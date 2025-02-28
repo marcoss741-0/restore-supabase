@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 
 import * as z from "zod";
 import { useForm } from "react-hook-form";
@@ -9,7 +8,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -60,7 +58,6 @@ export default function CreateAccountForm() {
                   <FormControl>
                     <Input placeholder="Digite seu e-mail." {...field} />
                   </FormControl>
-                  <FormDescription>This is your private mail.</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -74,15 +71,12 @@ export default function CreateAccountForm() {
                   <FormControl>
                     <Input placeholder="Digite sua senha." {...field} />
                   </FormControl>
-                  <FormDescription>
-                    This is your private password.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
-            <Button type="submit">Create Account</Button>
+            <Button type="submit">Criar conta</Button>
           </form>
         </Form>
       </div>

@@ -27,7 +27,7 @@ export default async function Home() {
   return (
     <>
       <div className="flex flex-col justify-center items-center h-screen w-full">
-        <Tabs defaultValue="create-account" className="w-[400px] shadow">
+        <Tabs defaultValue="create-account" className="w-[400px] shadow p-6">
           <TabsList className="flex justify-around rounded-b-none items-center h-14">
             <TabsTrigger value="create-account">Criar conta</TabsTrigger>
             <TabsTrigger value="login">Fazer Login</TabsTrigger>
